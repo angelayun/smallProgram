@@ -1,0 +1,17 @@
+<view>
+    <view class="title">{{title}}</view>
+    <button size="mini" type="primary" open-type="contact">客服</button>
+    <navigator url="/pages/kkb11/kkb">跳转到另外一个页面</navigator>
+    <button size="mini" type="primary" bindtap="handlerCloud">云函数调用</button>
+    <view wx:for="{{movies}}">{{item}}
+    </view>
+    <button size="mini" type="primary" bindtap="handlerTap">点击事件</button>
+    <input  placeholder="请输入你想干的事情"  bindinput="handlerInput" value="{{val}}"/>
+    <!-- <button size="mini" type="primary" open-type="share">转发</button>
+    <button size="mini" type="primary" open-type="getPhoneNumber">获取手机号</button>
+    <button size="mini" type="primary" open-type="feedback">反馈</button>
+    <button size="mini" type="primary" open-type="getUserInfo">获得用户信息</button> -->
+    <view wx:for="{{todos}}">{{item.title}}
+    <button size="mini" type="primary" bindtap="handlerTapDel">删除</button>
+    </view>
+</view>

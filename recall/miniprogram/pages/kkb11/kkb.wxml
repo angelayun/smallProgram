@@ -1,0 +1,11 @@
+<view>
+    <view class="title">{{title}}</view>
+    <button size="mini" type="primary" open-type="contact">客服</button>
+    <button size="mini" type="primary" bindtap="handlerTap">点击事件</button>
+    <input  placeholder="请输入你想干的事情"  bindinput="handlerInput" value="{{val}}"/>
+    <!-- <button size="mini" type="primary" open-type="share">转发</button>
+    <button size="mini" type="primary" open-type="getPhoneNumber">获取手机号</button>
+    <button size="mini" type="primary" open-type="feedback">反馈</button>
+    <button size="mini" type="primary" open-type="getUserInfo">获得用户信息</button> -->
+    <view wx:for="{{todos}}">{{item}}</view>
+</view>
