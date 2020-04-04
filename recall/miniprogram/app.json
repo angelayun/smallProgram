@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/me/me",
     "pages/kkb/kkb",
+    "pages/books/books",
     "pages/kkb11/kkb",
     "pages/index/index",
     "pages/userConsole/userConsole",
@@ -14,13 +16,30 @@
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
     "pages/im/im",
-    "pages/im/room/room"
+    "pages/im/room/room",
+    "pages/detail/detail"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/books/books",
+        "text": "图书",
+        "iconPath": "images/img/book.png",
+        "selectedIconPath": "images/img/book-active.png"
+      },
+      {
+        "pagePath": "pages/kkb/kkb",
+        "text": "我",
+        "iconPath": "images/img/me.png",
+        "selectedIconPath": "images/img/me-active.png"
+      }
+    ]
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "回忆录",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
